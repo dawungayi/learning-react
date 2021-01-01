@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+// functional component - stateless
+import MyComponent from '../src/components/Greet'
+
+// class conponent - stateful
+import Welcome from "../src/components/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyComponent></MyComponent>
+      {/* <Welcome></Welcome> */}
+      {/* if there is nothing between the open and close tags for this component, a self-closing tag will suffice */}
+      <Welcome></Welcome>
     </div>
   );
 }
