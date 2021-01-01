@@ -1,18 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-// functional component - stateless
+// functional component
 import MyComponent from '../src/components/Greet'
+import Hello from "../src/components/Hello";
 
-// class conponent - stateful
+// class conponent 
 import Welcome from "../src/components/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <MyComponent></MyComponent>
+      {/* <MyComponent></MyComponent> */}
       {/* <Welcome></Welcome> */}
       {/* if there is nothing between the open and close tags for this component, a self-closing tag will suffice */}
-      <Welcome></Welcome>
+      {/* <Welcome/> */}
+      <Hello/>
+      
     </div>
   );
 }
