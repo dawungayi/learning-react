@@ -6,14 +6,14 @@ import React from 'react'
 // const Greet = () => {
 //     return <h1> Hello Desmond </h1>
 // }
-// even better
+
 // using destructuring in the parameter - get the fields with these names straight up from the props parameter passed, like
 // const Greet = ({name, heroName}) => {   
-    
-    // destructuring in the body
-    const Greet = (props) => {
-    const {name, heroName} = props;
-    
+
+// destructuring in the body
+const Greet = (props) => {
+    const { name, heroName } = props;
+
     // { } tells React to evaluate the expression
     return (
         <div>
@@ -21,12 +21,7 @@ import React from 'react'
             {/* {props.children} */}
         </div>
 
-    ) 
+    )
 }
 // good thing aboout default exports is we can name it whatever in the .js file where it's imported
 export default Greet;
-
-/* 
-const Greet = (props) => {
-    console.log(props);
- */

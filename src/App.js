@@ -3,19 +3,18 @@ import Counter from './components/Counter';
 import Message from "./components/Message";
 import Greet from './components/Greet';
 import Welcome from "./components/Welcome";
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 function App() {
   return (
     <div className="App">
 
-      <Greet name="Clark" heroName="SuperMan"></Greet>
-      <Welcome name="Jackie" city="Tokyo"></Welcome>
+      {/* <FunctionClick/>
+      <ClassClick/> */}
+      <EventBind/>
 
-
-      {/* simple demo of states in class components */}
-      {/* <Messge></Messge> */}
-      {/* <Counter></Counter> */}
-      
     </div>
   );
 }
