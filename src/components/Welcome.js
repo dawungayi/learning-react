@@ -7,11 +7,17 @@ class Welcome extends Component {
         // props can be accessed via this.props - reserved for it - no need to pass props as parameter
         // props are IMMUTABLE !!!
         // this.props.name = "Jeffery" // throws Error
+        
+        // destructure the this.props object (only the ones we wish to use :))
+        const {name, city} = this.props;
+        // if we had states in this class, we destructure very similarly:
+        // const {state1, state2} = this.state;
+
         console.log(this.props);
         return (
             <div>
-                <h2>Welcome {this.props.name} from {this.props.city}</h2>
-                {this.props.children}
+                <h2>Welcome {name} from {city}</h2>
+                {/* {children} */}
             </div>
         )
     }
