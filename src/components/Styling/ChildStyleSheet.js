@@ -3,7 +3,8 @@ import React from 'react'
 function StyleSheetChild() {
     return (
         <div>
-            <h3 className='success'>Child of Stylesheet</h3>
+            {/* This CSS className is inherited from parent component - out of scope! */}
+            <h3 className='warning'>Child of Stylesheet</h3>
         </div>
     )
 }

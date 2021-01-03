@@ -23,6 +23,7 @@ function StyleSheet(props) {
             {/* good thing about CSS modules is that their scope is local ==> cannot be used in children components ==> avoids CSS conflict  */}
             <h1 className={styles.success}>CSS Module success</h1>
             <h1 className={styles.error}>CSS Module error</h1>
+            {/* The scope of CSS sylsheets extends to child components ==> out of scope, and could result in CSS conflicts */}
             <ChildStyleSheet/>
         </div>
     )
