@@ -21,6 +21,7 @@ class EventBind extends Component {
     //     })
     // }
 
+    // APPROACH #4 cont'd 
     // because of arrow function, the _this_ keyword always inherits the reference to the class
     clickHandler = () => {
         console.log(this);

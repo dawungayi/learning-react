@@ -6,15 +6,17 @@ import Welcome from "./components/Welcome";
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
+import Parent from './components/MethodProps/Parent';
 
 function App() {
   return (
     <div className="App">
 
+      <Parent/>
+
       {/* <FunctionClick/>
       <ClassClick/> */}
-      <EventBind/>
-
+      {/* <EventBind/> */}
     </div>
   );
 }
