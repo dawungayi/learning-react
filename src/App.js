@@ -8,12 +8,13 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import Parent from './components/MethodProps/Parent';
 import UserGreeting from './components/ConditionalRendering/UserGreeting';
+import NameList from './components/ListRendering/NameList';
 
 function App() {
   return (
     <div className="App">
 
-    <UserGreeting/>
+    <NameList/>
 
     </div>
   );
